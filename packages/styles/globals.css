@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@source "../../apps/boards";
+@source "../../apps/home";
+@source "../../apps/puzzles";
+
+@theme {
+  --color-base: #0d0f17;
+
+  --color-brand-cyan: #6bc5dc;
+  --color-brand-pink: #bc6bc4;
+  --color-brand-white: #f5f2f7;
+
+  --color-primary: #1b1f2b;
+  --color-secondary: #242938;
+  --color-secondary-hover: #303749;
+  --color-tertiary: #2a3142;
+  --color-tertiary-hover: #374054;
+  --color-quad: #3c475d;
+
+  --color-border-default: #3b465c;
+  --color-border-hover: #5d6d8f;
+
+  --color-text-muted: #9aa4b5;
+  --color-text-white: #f4f5f7;
+
+  --color-moving: var(--color-emerald-400);
+
+  --font-sans: "Inter", sans-serif;
+  --font-fredoka: "Fredoka";
+}
+
+.halloween {
+  --color-base: #07060a;
+
+  --color-primary: #221d30;
+  --color-secondary: #2d263e;
+  --color-secondary-hover: #38304d;
+  --color-tertiary: #38304d;
+  --color-tertiary-hover: #453b5d;
+  --color-quad: #544773;
+
+  --color-brand-cyan: #38d9b2;
+  --color-brand-pink: #d97736;
+
+  --color-border-default: #433757;
+  --color-border-hover: #6a4c9e;
+
+  --color-moving: var(--color-purple-400);
+}
+
+@layer base {
+  .christmas body {
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+    font-family: var(--font-sans);
+  }
+}
+
+@layer base {
+  html,
+  body {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,19 @@
+{
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "printWidth": 100,
+  "tailwindFunctions": ["cn", "clsx", "cva"],
+  "overrides": [
+    {
+      "files": "apps/boards/**",
+      "options": { "tailwindStylesheet": "./packages/styles/globals.css" }
+    },
+    {
+      "files": "apps/home/**",
+      "options": { "tailwindStylesheet": "./packages/styles/globals.css" }
+    },
+    {
+      "files": "apps/puzzles/**",
+      "options": { "tailwindStylesheet": "./packages/styles/globals.css" }
+    }
+  ]
+}
